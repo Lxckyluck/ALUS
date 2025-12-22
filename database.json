@@ -1,0 +1,19 @@
+{
+  "flag": {
+    "first_flag": "ALUS{Y0U_G0T_TH1S}",
+    "second_flag": "ALUS{RM_C0NS0LE_1N_PR0D}",
+    "third_flag": "ALUS{6TH_1S_N0T_THAT_BAD}",
+    "fourth_flag": "ALUS{K1NG_0F_THE_M0UNTAIN}"
+  },
+  "user": "santa",
+  "password": "{M3rry_Chr1stm4s_Fr0m_S4nt4_Pr0b4bly}",
+  "cookie": "a_manger_avec_moderation",
+  "administrator": false,
+  "hint": {
+    "first_hint": "",
+    "second_hint": "Je suis arrivé 6ème en 2019",
+    "third_hint": "élève toi au sommet !"
+  },
+  "tome_action": {},
+  "List_of_merits": {}
+}
