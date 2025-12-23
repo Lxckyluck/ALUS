@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("http://localhost:3000/flags/first_flag")
+  CheckToken();
+  fetch("https://alus-42702a.pages.gitlab.tech.orange/flags/first_flag")
     .then((res) => res.json())
     .then((data) => {
       document.querySelector("#first_flag").innerHTML += `
@@ -7,11 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
       sessionStorage.setItem("first_flag", data.flag);
     });
 });
-
-function LogOff() {
-  sessionStorage.removeItem("token");
-  console.log("retrait token");
-
+function CheckToken() {
   const token = sessionStorage.getItem("token");
   if (!token) {
     window.location.href = "../index.html";

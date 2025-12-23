@@ -5,11 +5,15 @@ document
     getCredentials();
   });
 
+document.addEventListener("DOMContentLoaded", () => {
+  CheckToken();
+});
+
 function getCredentials() {
   const user = document.getElementById("user").value;
   const password = document.getElementById("password").value;
   const token = sessionStorage.getItem("token");
-  fetch("http://localhost:3000/users/login", {
+  fetch("https://alus-42702a.pages.gitlab.tech.orange/users/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -24,11 +28,15 @@ function getCredentials() {
       } else {
         alert("Mauvais utilisateur ou mauvais mot de passe");
       }
-      if (token) {
-        window.location.href = "../home.html";
-      }
     })
     .catch((err) => {
       console.error("Erreur lors de la requête :", err);
     });
+}
+
+function CheckToken() {
+  const token = sessionStorage.getItem("token");
+  if (token) {
+    window.location.href = "../home.html";
+  }
 }
