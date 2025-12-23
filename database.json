@@ -1,19 +1,50 @@
 {
   "flag": {
-    "first_flag": "ALUS{Y0U_G0T_TH1S}",
-    "second_flag": "ALUS{RM_C0NS0LE_1N_PR0D}",
-    "third_flag": "ALUS{6TH_1S_N0T_THAT_BAD}",
-    "fourth_flag": "ALUS{K1NG_0F_THE_M0UNTAIN}"
+    "first_flag": "ALUS{Y0U_G0T_THIS}",
+    "second_flag": "Et bah, et bah, je m'en gratte la barbe. Bon à vrai dire j'ai même pas pris la peine de lire le message laissé par l'humain. Je te laisse l'honneur de le lire en premier : « KOF, KOF, je suis mal au point... KOF, KOF, mes petits dévoilez « ça » dans la liste. KOF, KOF, j'ai tout donné de ce que j'avais. Voici une clé qui vous permettra d'ouvrir le livre » : ALUS{Y0U_FINALLY_F0UND_ME!}",
+    "third_flag": "ALUS{MERRY_CHRISTMAS}"
   },
-  "user": "santa",
-  "password": "{M3rry_Chr1stm4s_Fr0m_S4nt4_Pr0b4bly}",
-  "cookie": "a_manger_avec_moderation",
-  "administrator": false,
-  "hint": {
-    "first_hint": "",
-    "second_hint": "Je suis arrivé 6ème en 2019",
-    "third_hint": "élève toi au sommet !"
-  },
-  "tome_action": {},
-  "List_of_merits": {}
+  "tome_action": [
+    {
+      "action": "Mamie a mangé tous les biscuits, même ceux qui étaient censés être pour le Père Noël"
+    },
+    {
+      "action": "Le chat a tenté de voler la boule de Noël, mais a fini coincé dans le sapin"
+    },
+    {
+      "action": "Les lutins ont décidé de faire une course de traîneaux en rollers"
+    },
+    {
+      "action": "Le Père Noël a oublié où il a mis ses lunettes, il les cherche toujours"
+    },
+    {
+      "action": "Les elfes ont organisé une compétition de chant de Noël"
+    },
+    {
+      "action": "Un bonhomme de neige a décidé de faire du ski dans le jardin"
+    },
+    {
+      "action": "Les rennes ont fait une pause café... et ont oublié de repartir à l’heure"
+    },
+    {
+      "action": "Une souris a volé le bonnet du Père Noël pour faire la fête dans la cave"
+    },
+    {
+      "action": "Les guirlandes ont décidé de s’enrouler autour du chat pour faire une danse de Noël"
+    },
+    {
+      "action": "Un humain a laissé un message derrière lui à la page 'advent_calendar'. "
+    },
+    {
+      "action": "Les lutins ont fait une bataille de boules de neige en intérieur..."
+    },
+    {
+      "action": "Mamie a décidé de faire un concours de biscuits… en utilisant des ingrédients secrets (et très étranges)"
+    },
+    {
+      "action": "Les rennes ont essayé de faire du yoga mais ont fini par se prendre dans les guirlandes"
+    }
+  ],
+  "List_of_merits": {},
+  "news": []
 }

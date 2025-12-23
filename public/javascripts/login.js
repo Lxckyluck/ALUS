@@ -1,19 +1,19 @@
-document
-  .getElementById("loginForm")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
-    getCredentials();
-  });
-
 document.addEventListener("DOMContentLoaded", () => {
   CheckToken();
+
+  const loginForm = document.getElementById("loginForm");
+  if (loginForm) {
+    loginForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+      getCredentials();
+    });
+  }
 });
 
 function getCredentials() {
   const user = document.getElementById("user").value;
   const password = document.getElementById("password").value;
-  const token = sessionStorage.getItem("token");
-  fetch("https://alus-42702a.pages.gitlab.tech.orange/users/login", {
+  fetch("http://localhost:3000/users/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

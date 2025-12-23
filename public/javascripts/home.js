@@ -1,11 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   CheckToken();
-  fetch("https://alus-42702a.pages.gitlab.tech.orange/flags/first_flag")
+  fetch("http://localhost:3000/flags/first_flag")
     .then((res) => res.json())
     .then((data) => {
       document.querySelector("#first_flag").innerHTML += `
-      <p>Bravo ! Voici le premier flag : ${data.flag}</p>`;
-      sessionStorage.setItem("first_flag", data.flag);
+      <p>OhOhOh ! Alors comme ça tu as réussi à rentrer ? Et bah bienvenue. Voici ton cadeau pour avoir réussi à être venu ici : ${data.flag}</p>`;
     });
 });
 function CheckToken() {
