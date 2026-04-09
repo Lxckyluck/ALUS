@@ -1,7 +1,7 @@
 {
   "flag": {
-    "first_flag": "ALUS{Y0U_G0T_THIS}",
-    "second_flag": "Et bah, et bah, je m'en gratte la barbe. Bon à vrai dire j'ai même pas pris la peine de lire le message laissé par l'humain. Je te laisse l'honneur de le lire en premier : « KOF, KOF, je suis mal au point... KOF, KOF, mes petits dévoilez « ça » dans la liste. KOF, KOF, j'ai tout donné de ce que j'avais. Voici une clé qui vous permettra d'ouvrir le livre » : ALUS{Y0U_FINALLY_F0UND_ME!}",
+    "first_flag": "ALUS{Y0U_FINALLY_F0UND_ME!}",
+    "second_flag": "Et bah, et bah, je m'en gratte la barbe. Bon à vrai dire j'ai même pas pris la peine de lire le message laissé par l'humain. Je te laisse l'honneur de le lire en premier : « KOF, KOF, je suis mal au point... KOF, KOF, humain si tu es arrivé jusqu'à là c'est que tu dois être quelqu'un de confiance pas vrai ? Voici une clé qui te permettra d'ouvrir un livre : ALUS{Y0U_FINALLY_F0UND_ME!}",
     "third_flag": "ALUS{MERRY_CHRISTMAS}"
   },
   "tome_action": [
@@ -45,6 +45,46 @@
       "action": "Les rennes ont essayé de faire du yoga mais ont fini par se prendre dans les guirlandes"
     }
   ],
-  "List_of_merits": {},
+  "merits": [
+    {
+      "action": "Mamie a préparé un délicieux gâteau de Noël pour toute la famille"
+    },
+    {
+      "action": "Le Père Noël a distribué des cadeaux avec un grand sourire"
+    },
+    {
+      "action": "Les lutins ont aidé à décorer le sapin avec beaucoup de soin"
+    },
+    {
+      "action": "Un enfant a écrit une jolie lettre de vœux à Santa Claus"
+    },
+    {
+      "action": "Les rennes ont fait une promenade dans la neige pour apporter la joie"
+    },
+    {
+      "action": "Une famille a organisé une soirée de chants de Noël pour ses voisins"
+    },
+    {
+      "action": "Les elfes ont fabriqué des jouets avec amour et patience"
+    },
+    {
+      "action": "Un voisin a offert un cadeau surprise à quelqu’un dans le besoin"
+    },
+    {
+      "action": "Les enfants ont aidé à préparer des biscuits pour tout le quartier"
+    },
+    {
+      "action": "Quelque chose ne va pas cette année... Le Père Noël n'est plus celui que vous croyez. Rendez-vous sur '/final.html' si vous osez le confronter."
+    },
+    {
+      "action": "Une famille a passé la journée à faire des activités ensemble, remplie de rires"
+    },
+    {
+      "action": "Les lutins ont écrit des messages de paix et d’amour pour tout le monde"
+    },
+    {
+      "action": "Un groupe d’amis a organisé une collecte de jouets pour les enfants défavorisés"
+    }
+  ],
   "news": []
 }

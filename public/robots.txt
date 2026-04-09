@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+
+# Tel un calendrier de l'avent, chaque jour cache un secret

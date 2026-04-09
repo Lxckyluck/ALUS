@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function getCredentials() {
   const user = document.getElementById("user").value;
   const password = document.getElementById("password").value;
-  fetch("http://localhost:3000/users/login", {
+  fetch(`${BASE_URL}/users/login`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

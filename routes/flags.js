@@ -3,6 +3,32 @@ const router = express.Router();
 const fs = require("fs");
 const path = require("path");
 
+const attempts = {};
+
+const rateLimiter = (req, res, next) => {
+  const ip = req.ip;
+  const now = Date.now();
+
+  if (!attempts[ip]) {
+    attempts[ip] = { count: 1, start: now };
+    return next();
+  }
+
+  if (now - attempts[ip].start > 60000) {
+    attempts[ip] = { count: 1, start: now };
+    return next();
+  }
+
+  if (attempts[ip].count >= 10) {
+    return res.status(429).json({
+      error: "Les lutins sont épuisés... Réessaie dans une minute !",
+    });
+  }
+
+  attempts[ip].count++;
+  next();
+};
+
 router.get("/first_flag", (req, res) => {
   const dataPath = path.join(__dirname, "../database.json");
   fs.readFile(dataPath, "utf8", (err, data) => {
@@ -20,6 +46,7 @@ router.get("/second_flag", (req, res) => {
 
 router.get(
   "/!not_second_flag/:first_number/:second_number/:third_number",
+  rateLimiter,
   (req, res) => {
     const dataPath = path.join(__dirname, "../database.json");
     fs.readFile(dataPath, "utf8", (err, data) => {
@@ -35,7 +62,7 @@ router.get(
         res.json(jsonData.flag.second_flag);
       }
     });
-  }
+  },
 );
 
 router.get("/third_flag", (req, res) => {

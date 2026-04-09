@@ -7,7 +7,7 @@ days.forEach((day) => {
     calendar_days.push(dayNumber);
     if (calendar_days.length === 3) {
       fetch(
-        `http://localhost:3000/flags/!not_second_flag/${calendar_days[0]}/${calendar_days[1]}/${calendar_days[2]}`
+        `${BASE_URL}/flags/!not_second_flag/${calendar_days[0]}/${calendar_days[1]}/${calendar_days[2]}`,
       )
         .then((res) => res.json())
         .then((data) => {
