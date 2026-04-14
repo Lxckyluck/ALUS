@@ -1,1 +1,1 @@
-const BASE_URL = "http://localhost.com:3000";
+const BASE_URL = "https://alus-tau.vercel.app";
