@@ -25,6 +25,9 @@ router.get(
   (req, res) => {
     const dataPath = path.join(__dirname, "../database.json");
     fs.readFile(dataPath, "utf8", (err, data) => {
+      if (err) {
+        return res.status(500).json({ error: "Erreur serveur" });
+      }
       const jsonData = JSON.parse(data);
       if (
         req.params.first_number == 21 &&
@@ -32,8 +35,6 @@ router.get(
         req.params.third_number == 26
       ) {
         res.json(jsonData.flag.second_flag);
-      } else {
-        return res.status(404).json({ "Essaye encore....")}
       }
     });
   },
