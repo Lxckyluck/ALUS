@@ -25,9 +25,6 @@ router.get(
   (req, res) => {
     const dataPath = path.join(__dirname, "../database.json");
     fs.readFile(dataPath, "utf8", (err, data) => {
-      if (err) {
-        return res.status(500).json({ error: "Erreur serveur" });
-      }
       const jsonData = JSON.parse(data);
       if (
         req.params.first_number == 21 &&
