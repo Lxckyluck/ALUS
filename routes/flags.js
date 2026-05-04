@@ -35,6 +35,8 @@ router.get(
         req.params.third_number == 26
       ) {
         res.json(jsonData.flag.second_flag);
+      } else {
+        return res.status(404).json({ "Essaye encore....")}
       }
     });
   },
