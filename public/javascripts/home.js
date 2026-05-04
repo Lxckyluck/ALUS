@@ -4,3 +4,4 @@ function CheckToken() {
     window.location.href = "../index.html";
   }
 }
+CheckToken()
