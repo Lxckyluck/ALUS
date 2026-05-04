@@ -40,3 +40,5 @@ function CheckToken() {
     window.location.href = "../home.html";
   }
 }
+
+CheckToken()
